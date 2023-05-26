@@ -1,0 +1,35 @@
+.welocme-container{
+    padding-left: 14%;
+    padding-top: 40px;
+}
+.card-register-img{
+    height: 550px;
+}
+.welcome-content{
+    display:flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 0px 35px 30px;
+
+}
+.welcome-title{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 60px;
+   
+}
+.welcome-logo{
+    text-align: center;
+    padding: 30px 15px;
+    transform: translateY(-30px);
+}
+.welcome-logo > .logo{
+    width: 260px;
+    height: auto;
+}
+.card-title{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}

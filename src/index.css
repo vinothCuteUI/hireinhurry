@@ -9,12 +9,13 @@
   --secondary-color: #F6E9E6;
   --text-color-1:#2D3134;
   --text-color-2:#5F5350;
-  --bg-primary:#fff5f0;
+  --bg-secondary:#fff5f0;
 }
 
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 300;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -32,6 +33,19 @@ a{
 
 /* Common style -------------------------------
 -----------------------------------------------*/
+.bg-prime{
+  background-color: var(--primary-color) !important;
+}
+.bg-secondary{
+  background-color: var(--bg-secondary) !important;
+}
+
+.w-50{
+  width: 50% !important;
+}
+.w-100{
+  width: 100% !important;
+}
 .txt-white{
   color: #fff;
 }
@@ -78,11 +92,12 @@ a{
 -----------------------------------------------*/
 .card-section{
   position: relative;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .card-container{
   /* width: 1140px; */
-  padding-left: 14%;
-  padding-right: 14%;
+  position: relative;
 }
 .card-register {
   background-color: var(--primary-color);
@@ -90,21 +105,42 @@ a{
   border-radius: 15px;
   padding: 20px 45px;
 }
-.card-register-img{
+.card-img{
   position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-52%);
-    width: auto;
-    height: 100%;
+  top: 50%;
+  transform: translateY(-52%);
+  width: auto;
+  height: 620px;
+  z-index: -1;
 }
-.card-bg{
+.img-left{
+  left: 0;
+}
+.img-right{
+  right: 0;
+}
+/* .card-bg{
   background-image: url(./assets/images/login-screen-image.png);
   background-repeat: no-repeat;
-  background-position: 96% -55px;
-  background-size: auto 100%; 
-}
+  background-position: 96% center;
+  background-size: auto 680px;
+} */
 
+.login-item{
+  margin-top: 30px;
+
+}
+.login-link{
+  color: #fff;
+  text-decoration: underline;
+}
+.login-link >span{
+  font-weight: 500;
+}
+.login-link:hover{
+  color: var(--secondary-color);
+
+}
 .login-forms{
   width: 400px;
   height: 400px;

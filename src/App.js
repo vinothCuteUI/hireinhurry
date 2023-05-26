@@ -4,6 +4,7 @@ import RootLayout from './Components/Roots/Rootlayout';
 import Errorpage from './Components/Errorpage/Errorpage';
 import Verification from './Components/Verification/Verification';
 import Loginpage from './Components/Login-page/Login-page';
+import Welcomeregister from './Components/Welcome-register/Welcome-register';
 
 const routes =  createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const routes =  createBrowserRouter([
     errorElement:<Errorpage />,
     children:[
       {path:"/login", element: <Loginpage />},
+      {path:"/welcome-register", element: <Welcomeregister />},
       {path:"/verification", element: <Verification />},
     ]
   }
