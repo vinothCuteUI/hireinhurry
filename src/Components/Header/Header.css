@@ -1,0 +1,21 @@
+.header-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    padding: 20px 34px;
+}
+.navbar-list{
+    display: flex;
+    padding-left: 40px;
+}
+.navbar-link{
+    display: block;
+    color: var(--text-color-1);
+    padding: 12px 15px 10px;
+    transition: all 0.3s ease;
+}
+.navbar-link:hover{
+    color: var(--primary-color);
+}

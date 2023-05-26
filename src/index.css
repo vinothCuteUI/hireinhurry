@@ -5,9 +5,113 @@
 }
 
 :root{
-
+  --primary-color: #F66F4D;
+  --secondary-color: #F6E9E6;
+  --text-color-1:#2D3134;
+  --text-color-2:#5F5350;
+  --bg-primary:#fff5f0;
 }
 
 body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Common style -------------------------------
+-----------------------------------------------*/
+.txt-white{
+  color: #fff;
+}
+.vh-100{
+  height: 100vh !important;
+}
+
+.btn{
+  box-shadow: 1px 2px 5px #5F5350;
+  font-weight: 600;
+}
+.btn-secondary{
+	background: var(--secondary-color);
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	padding: 8px 12px;
+  color: var(--text-color-2);
+  
+}
+
+.btn-secondary:hover{
+  color: var(--text-color-2);
+	background: var(--secondary-color);
+  opacity: 0.9;
+}
+
+.btn-secondary:active{
+  color: var(--text-color-2);
+	background: var(--secondary-color) !important;
+}
+
+.btn-secondary:visited{
+  color: var(--text-color-2);
+	background: var(--secondary-color);
+}
+
+.btn-secondary:focus{
+  color: var(--text-color-2);
+	background: var(--secondary-color);
+}
+
+/* Login & register Card -----------------------
+-----------------------------------------------*/
+.card-section{
+  position: relative;
+}
+.card-container{
+  /* width: 1140px; */
+  padding-left: 14%;
+  padding-right: 14%;
+}
+.card-register {
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 15px;
+  padding: 20px 45px;
+}
+.card-register-img{
+  position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-52%);
+    width: auto;
+    height: 100%;
+}
+.card-bg{
+  background-image: url(./assets/images/login-screen-image.png);
+  background-repeat: no-repeat;
+  background-position: 96% -55px;
+  background-size: auto 100%; 
+}
+
+.login-forms{
+  width: 400px;
+  height: 400px;
+  border:solid 1px var(--primary-color);
+  flex: 0 0 auto;
+}
+
+@media (min-width: 1200px){
   
 }
