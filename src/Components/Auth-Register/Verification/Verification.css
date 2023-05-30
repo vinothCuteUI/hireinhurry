@@ -1,0 +1,19 @@
+.timeleft{
+	color: var(--primary-color);
+	display: block;
+	text-align: center;
+	margin: 2rem 1rem 1.5rem;
+}
+
+.otp-label{
+	color: var(--input-color) !important;
+}
+
+.go-back{
+	color: var(--primary-color);
+}
+
+.go-back:hover{
+	color: var(--primary-color);
+	opacity: 0.9;
+}

@@ -1,0 +1,15 @@
+.login-container{
+    padding-right: 12%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.forgot-pass{
+    color: var(--primary-color);
+}
+
+.forgot-pass:hover{
+    color: var(--primary-color);
+}

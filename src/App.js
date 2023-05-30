@@ -1,26 +1,26 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
-import RootLayout from './Components/Roots/Rootlayout';
-import Errorpage from './Components/Errorpage/Errorpage';
-import Verification from './Components/Verification/Verification';
-import Loginpage from './Components/Login-page/Login-page';
-import Welcomeregister from './Components/Welcome-register/Welcome-register';
-
-const routes =  createBrowserRouter([
-  {
-    path:"/",
-    element:<RootLayout />,
-    errorElement:<Errorpage />,
-    children:[
-      {path:"/login", element: <Loginpage />},
-      {path:"/welcome-register", element: <Welcomeregister />},
-      {path:"/verification", element: <Verification />},
-    ]
-  }
-])
+import React, { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return <RouterProvider router={routes}></RouterProvider>
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const checkUserToken = () => {
+      const userToken = localStorage.getItem('user-token');
+      if (!userToken || userToken === 'undefined') {
+          setIsLoggedIn(false);
+      }
+      setIsLoggedIn(true);
+  }
+  useEffect(() => {
+      checkUserToken();
+  }, [isLoggedIn]);
+
+  return (
+    <React.Fragment>
+        <Outlet />
+    </React.Fragment>
+  )
 }
 
 export default App;

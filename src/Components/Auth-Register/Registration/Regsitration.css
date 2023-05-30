@@ -1,0 +1,31 @@
+.reg-sec{
+	padding: 100px 0 20px;
+}
+
+.reg-form{
+	background: var(--bg-primary);
+	padding: 20px 20px;
+}
+
+.form-title{
+	text-align: center;
+	color: var(--primary-color);
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.form-lable{
+	color: var(--label-color);
+}
+
+.reg-img{
+	width: 80%;
+}
+
+.login{
+	color: var(--primary-color);
+}
+
+.login:hover{
+	color: var(--primary-color);
+}
